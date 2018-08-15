@@ -1,0 +1,645 @@
+body, ul, button, p {
+    margin: 0;
+    padding: 0;
+    font-family: "宋体";
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.dot {
+    background: url("../img/spirit.gif") no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.menBan{
+    width: 100%;
+    height: 1200px;
+    background: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    display: none;
+}
+.head {
+    width: 100%;
+    height: 30px;
+    background: url("../img/cn_head.gif") repeat-x;
+}
+
+.headPic {
+    width: 1000px;
+    height: 104px;
+    background: url("../img/headpic.gif") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.headPic .flag {
+    width: 182px;
+    height: 13px;
+    float: right;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.headPic .flag i {
+    display: inline-block;
+    background: url("../img/banner.fw.png") no-repeat;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.headPic .flag a {
+    line-height: 13px;
+    padding-right: 5px;
+}
+
+.headPic .flag .china {
+    width: 19px;
+    height: 13px;
+    background-position: 0 0;
+}
+
+.headPic .flag .England {
+    width: 19px;
+    height: 13px;
+    background-position: -21px 0;
+}
+
+.cn_guide {
+    width: 100%;
+    height: 41px;
+    background: url("../img/cn_guide.gif") repeat-x;
+    margin-top: 74px;
+    font-weight: bold;
+}
+
+.cn_guide ul {
+    width: 1000px;
+    height: 41px;
+    margin: 0 auto;
+}
+
+.cn_guide ul li {
+    height: 41px;
+    width: 108px;
+    float: left;
+    text-align: center;
+    line-height: 41px;
+    font-size: 15px;
+}
+
+.cn_guide ul .line {
+    background: url("../img/guide_btn.gif") no-repeat;
+}
+
+.cn_guide ul li a {
+    color: white;
+    display: block;
+    position: relative;
+}
+
+.cn_guide ul li:hover a {
+    background: url("../img/over_btn.gif") no-repeat;
+    width: 119px;
+    height: 47px;
+    top: -6px;
+    left: -5px;
+}
+
+.middle {
+    width: 100%;
+    height: 964px;
+    background: url("../img/bg_point.png") repeat;
+}
+
+.cnMain {
+    height: 964px;
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: tan;*/
+
+}
+.cnMain .register{
+    width: 400px;
+    height: 235px;
+    background: url("../img/bg5.png")repeat-y;
+    z-index: 1;
+    left: 50%;
+    margin-left: -200px;
+    top:100px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bolder;
+    position: fixed;
+    display: none;
+}
+
+.cnMain .register ul li{
+    width: 250px;
+    height: 40px;
+    margin:0 auto;
+    padding-top: 4px;
+    /*border: 1px solid black*/
+}
+.cnMain .register ul li:first-child{
+    font-size: 20px;
+    text-align: center;
+}
+.cnMain .register ul li span{
+    display: block;
+    float: left;
+}
+.cnMain .register ul li input{
+    float: left;
+    height: 20px;
+    width: 200px;
+    background: url("../img/zhuce.png")repeat-x;
+    border: none;
+    border-radius: 3px;
+    color: #a8a8a8;
+}
+.cnMain .register ul li .return{
+    width: 30px;
+    height: 30px;
+    background: url("../img/quxiao.png")no-repeat;
+    background-position: -2px -2px;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.cnMain .register ul li:last-child{
+    text-align:center ;
+}
+.cnMain .register ul li .rightNow{
+    margin-top: 10px;
+    width: 96px;
+    height: 27px;
+    background: url("../img/login1.png")no-repeat;
+    background-position: -3px -3px;
+    border-radius: 5px;
+}
+.cnMain .loadIn {
+    height: 57px;
+    width: 980px;
+    margin: 0 auto;
+    background: url("../img/loadIn.gif") no-repeat;
+}
+
+.cnMain .loadIn > ul {
+    height: 57px;
+    width: 980px;
+}
+
+.cnMain .loadIn ul li {
+    width: 149px;
+    height: 57px;
+    float: left;
+    line-height: 57px;
+}
+
+.cnMain .loadIn ul li ul {
+    width: 230px;
+    height: 18px;
+    margin-top: 20px;
+}
+
+.cnMain .loadIn ul .fenXiang ul li {
+    background: url("../img/shell.png");
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.cnMain .loadIn ul .fenXiang li {
+    margin-right: 6px;
+}
+
+.cnMain .loadIn ul .fenXiang li a {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.cnMain .loadIn ul .fenXiang .share {
+    width: 70px;
+    background-position: 0 0;
+}
+
+.cnMain .loadIn ul .fenXiang .qZone {
+    background-position: -70px 0;
+}
+
+.cnMain .loadIn ul .fenXiang .weiBo {
+    background-position: -92px 0;
+}
+
+.cnMain .loadIn ul .fenXiang .boKe {
+    background-position: -114px 0;
+}
+
+.cnMain .loadIn ul .fenXiang .renRen {
+    background-position: -136px 0;
+}
+
+.cnMain .loadIn ul .fenXiang .huoRen {
+    background-position: -158px 0;
+}
+
+.cnMain .loadIn ul .fenXiang {
+    width: 230px;
+    float: right;
+    overflow: hidden;
+    margin-right: 5px;
+    position: relative;
+}
+
+.cnMain .loadIn ul .fenXiang ul {
+    left: 212px;
+    position: absolute;
+}
+
+.cnMain .loadIn ul li input {
+    width: 141px;
+    height: 24px;
+    border: none;
+    color: rgba(125, 125, 99, 0.54);
+    outline: none;
+}
+
+.cnMain .loadIn ul li button {
+    width: 45px;
+    height: 24px;
+    background: url("../img/login.png") no-repeat;
+    outline: none;
+    padding-top: 14px;
+    /*vertical-align: middle;*/
+}
+
+.cnMain .loadIn ul li .zhuce {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.cnMain .loadIn ul li .input {
+    background: url("../img/input.png") no-repeat;
+    padding-left: 5px;
+}
+
+.cnMain .loadIn ul li .mima {
+    background: url("../img/xiaosuo.png") no-repeat;
+    padding-left: 30px;
+}
+
+.cnMain .loadIn ul li:first-child {
+    background: url("../img/Vip.png");
+}
+
+.cnMain .slideShow {
+    position: relative;
+    width: 1000px;
+    height: 353px;
+}
+
+.cnMain .slideShow ul li {
+    width: 1000px;
+    height: 353px;
+    position: absolute;
+}
+
+.cnMain .slideShow ul .one {
+    background: url("../img/lunbo.gif") no-repeat;
+}
+
+.cnMain .slideShow ul .two {
+    background: url("../img/lunbo1.gif") no-repeat;
+}
+
+.cnMain .slideShow ul .three {
+    background: url("../img/lunbo2.gif") no-repeat;
+}
+
+.cnMain .slideShow ul li .loadIn {
+    width: 45px;
+}
+
+.cnMain .slideShow .leftBtn {
+    width: 500px;
+    height: 353px;
+    position: absolute;
+    left: 0;
+
+}
+
+.cnMain .slideShow .rightBtn {
+    width: 500px;
+    height: 353px;
+    position: absolute;
+    right: 0;
+}
+
+.cnMain .slideShow span {
+    background: url("../img/btn.gif") no-repeat;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.cnMain .slideShow .leftBtn span {
+    background-position: -2px 0;
+    left: 0;
+    top: 150px;
+}
+
+.cnMain .slideShow .rightBtn span {
+    background-position: -927px 3px;
+    right: 0;
+    top: 150px;
+}
+
+.cnMain .briefIntroduction {
+    width: 100%;
+    height: 272px;
+    background: url("../img/bg1.png") no-repeat;
+    margin-top: 1px;
+    color: #6c6c6c;
+    font-size: 12px;
+}
+
+.cnMain .briefIntroduction > div {
+    float: left;
+}
+
+.cnMain .briefIntroduction .intro {
+    width: 312px;
+    height: 100%;
+}
+
+.cnMain .briefIntroduction .intro > p {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.cnMain .briefIntroduction .intro .introTitle {
+    height: 80px;
+    width: 100%;
+    background: url("../img/company.gif") no-repeat;
+}
+
+.cnMain .briefIntroduction .more {
+    width: 44px;
+    height: 13px;
+    float: right;
+    margin-top: 38px;
+    margin-right: 18px;
+    background: url("../img/more.gif") no-repeat;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 {
+    width: 100%;
+    height: 114px;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 ul {
+    height: 114px;
+    width: 100%;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 ul li {
+    text-align: center;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 ul p {
+    text-indent: 2em;
+    margin-top: 20px;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 ul li:first-child {
+    width: 148px;
+    height: 100%;
+    float: left;
+}
+
+.cnMain .briefIntroduction .intro .centerPic1 ul li:last-child {
+    width: 155px;
+    height: 100%;
+    float: left;
+    padding-left: 4px;
+}
+
+.cnMain .briefIntroduction .news {
+    width: 406px;
+    height: 100%;
+}
+
+.cnMain .briefIntroduction .news p {
+    width: 100%;
+    height: 25px;
+}
+
+.cnMain .briefIntroduction .news p i {
+    background: url("../img/dot.fw.png") no-repeat;
+    width: 7px;
+    height: 6px;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+
+.cnMain .briefIntroduction .news p .data {
+    padding-right: 10px;
+    color: #a8a8a8;
+    float: right;
+}
+
+.cnMain .briefIntroduction .news p a {
+    color: #6c6c6c;
+}
+
+.cnMain .briefIntroduction .news .newsTitle {
+    height: 80px;
+    width: 100%;
+    background: url("../img/newscenter.gif") no-repeat;
+}
+
+.cnMain .briefIntroduction .news .centerPic2 {
+    height: 114px;
+    width: 100%;
+    color: #a8a8a8;
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li {
+    float: left;
+
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li p {
+    width: 232px;
+
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li p span {
+    color: #50b540;
+    font-weight: bolder;
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li p a {
+    color: #50b540;
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li:first-child {
+    width: 148px;
+}
+
+.cnMain .briefIntroduction .news .centerPic2 ul li:last-child {
+    width: 164px;
+}
+
+.cnMain .briefIntroduction .connection {
+    width: 281px;
+    height: 100%;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 {
+    height: 192px;
+    width: 100%;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li {
+    height: 32px;
+    width: 261px;
+    padding-left: 20px;
+    line-height: 38px;
+    color: #959595;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li .adress {
+    background-position: 0 -1px;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li .emailAdress {
+    background-position: 0 -37px;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li .call {
+    background-position: 0 -70px;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li .fax {
+    background-position: 0 -107px;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li .eMail {
+    background-position: 0 -143px;
+}
+
+.cnMain .briefIntroduction .connection .centerPic3 ul li i {
+    padding-right: 5px;
+    vertical-align: middle
+}
+
+.cnMain .briefIntroduction .connection p {
+    width: 100%;
+
+}
+
+.cnMain .briefIntroduction .connection .connectionTitle {
+    height: 80px;
+    width: 100%;
+    background: url("../img/connection-us.gif") no-repeat;
+}
+
+.cnMain .productShow {
+    width: 100%;
+    height: 280px;
+    background: url("../img/bg2.png") no-repeat;
+    padding-top: 1px;
+}
+
+.cnMain .productShow .changePic {
+    width: 100%;
+    height: 195px;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cnMain .productShow .changePic ul {
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.cnMain .productShow .changePic ul li {
+    height: 195px;
+    width: 175px;
+    float: left;
+    padding-left: 21px;
+}
+
+.cnMain .productShow .changePic ul li p {
+    height: 30px;
+    width: 175px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 7px;
+    text-align: center;
+    font-size: 13px;
+    color: #776e6e;
+}
+
+.cnMain .productShow .buttons {
+    width: 70px;
+    height: 25px;
+    float: right;
+}
+
+.cnMain .productShow .buttons span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 91px;
+    background: url("../img/footer.gif") repeat-x;
+    text-align: center;
+}
+
+.footer p {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+.footer p em{
+    width: 20px;
+    display: inline-block;
+}
+
+
