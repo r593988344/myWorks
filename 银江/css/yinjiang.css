@@ -1,0 +1,599 @@
+html {
+    color: #404040;
+    background: #FFF
+}
+
+body {
+    font-size: 15px;
+    font-family: "微软雅黑";
+    overflow-x: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: block;
+}
+body, div,figure, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+em {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset {
+    display: none
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*页面样式初始化完成*/
+.yjTop{
+    width: 100%;
+    height: 104px;
+    background: #f3f3f3;
+}
+
+.yjTop .mainTop{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.yjTop .yjLogo{
+    width: 378px;
+    height: 104px;
+    float: left;
+    background: url("../imgs/LOGO.png") no-repeat 0 0;
+}
+.yjTop .mainTop ul{
+    float: right;
+}
+.yjTop .mainTop ul>li{
+    float: left;
+    line-height: 104px;
+    height: 104px;
+    color: #8c8e90;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.yjTop .mainTop ul>li a{
+    color: #8c8e90;
+}
+.yjTop .mainTop ul>li i{
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    vertical-align: middle;
+    background: url("../imgs/user.png") no-repeat 0 0;
+}
+.yjTop .mainTop ul .logOut{
+    margin-left: 15px;
+}
+.yjTop .mainTop ul .logOut a{
+    display: block;
+    width: 65px;
+    height: 33px;
+    background: url("../imgs/logOut.png") no-repeat 0 0;
+    margin-top: 40px;
+}
+.navBar{
+    height: 70px;
+    width: 100%;
+    background: #326cd0;
+}
+.navBar .naBar_guide{
+    width: 1200px;
+    height: 100%;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+.navBar .naBar_guide>ul>li{
+    float: left;
+    height: 70px;
+    width: 130px;
+    line-height: 25px;
+    font-size: 16px;
+    /*margin-right: 50px;*/
+    text-align: center;
+    position: relative;
+    transition: background-color 1s;
+}
+.navBar .naBar_guide>ul>li:hover{
+    background-color: orangered;
+}
+.navBar .naBar_guide>ul>li.the_tab .tab{
+    position: absolute;
+    width: 130px;
+    top:70px;
+    height: 0;
+    transition: height 1s;
+    overflow: hidden;
+    background: white;
+}
+.navBar .naBar_guide>ul>li.the_tab.tab li{
+    line-height: 30px;
+}
+.navBar .naBar_guide>ul .the_tab:hover>.tab{
+    height: 200px;
+}
+
+.navBar .naBar_guide>ul>li a{
+    display: inline-block;
+    color: white;
+    padding-top: 10px;
+}
+.navBar .naBar_guide>ul>li a i{
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background: url("../imgs/arrow.png") no-repeat 0 0;
+}
+.yjContent{
+    width: 1200px;
+    height: 1711px;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+.yjContent .incubator{
+    height: 500px;
+    width: 100%;
+    background: url("../imgs/fuhuaqi.png") no-repeat 0 0;
+}
+.yjContent .yjNews{
+    width: 749px;
+    height: 357px;
+    float: left;
+    /*background-color: blue;*/
+}
+.yjContent .yjNews .news_title>ul>li a{
+    color: #000000;
+}
+.yjContent .yjNews .news_title>ul>li:target{
+    border-bottom: 4px solid #2f64bf;
+    box-sizing: border-box;;
+}
+
+.yjContent .yjNews .news_content{
+    width: 749px;
+    height: 296px;
+}
+.yjContent .yjNews .news_content .news_left{
+    width: 280px;
+    float: left;
+    /*overflow: hidden;*/
+}
+.yjContent .yjNews .news_content .news_right{
+    width: 468px;
+    float: left;
+    margin-top: 20px;
+}
+/*.yjContent .yjNews .news_content .customer{
+    margin: 0;
+    !*margin-right: 0;*!
+}*/
+
+.yjContent .yjNews .news_content .customer .img_box{
+    width: 280px;
+    height: 160px;
+    overflow: hidden;
+}
+.yjContent .yjNews .news_content .customer img{
+    width: 280px;
+    height: 160px;
+    margin-top: 20px;
+    transition:  0.3s;
+    /*float: left;*/
+}
+.yjContent .yjNews .news_content .customer img:hover{
+    transform: scale(1.1);
+}
+.yjContent .yjNews .news_content>ul{
+    width: 450px;
+    display: inline-block;
+}
+.yjContent .yjNews .news_content .news_right ul>li{
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    /*list-style:  square;*/
+}
+.yjContent .yjNews .news_content .news_right ul>li .dot{
+    background: url("../imgs/squre.png") no-repeat 0 0;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.yjContent .yjNews .news_content .customer figcaption{
+    line-height: 40px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.yjContent .yjNews .news_content .news_bottom{
+    width: 749px;
+    height: 62px;
+    margin-top:20px ;
+    float: left;
+    /*background-color: greenyellow;*/
+}
+.yjContent .yjNews .news_content .news_bottom ul>li{
+    width: 152px;
+    height: 62px;
+    float: left;
+    line-height: 62px;
+    font-size: 16px;
+    background: url("../imgs/btn1.png") no-repeat 0 0;
+    margin-right: 27px;
+    text-align: center;
+}
+
+.yjContent .yjNews .news_content .news_bottom ul>li a{
+    display: block;
+    width: 152px;
+    height: 62px;
+    color: #527cc7;
+}
+.yjContent .parkTour{
+    width: 749px;
+    height: 434px;
+    float: left;
+    /*background-color: red;*/
+}
+.yjContent .parkTour .parkTour_pic{
+    width: 439px;
+    height: 100%;
+    float: left;
+}
+.yjContent .parkTour .parkTour_pic .parkTour_top{
+    line-height:50px;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+    margin-bottom:20px;
+}
+.yjContent h3{
+    font-size: 18px;
+    line-height: 42px;
+    padding-top: 16px;
+}
+.yjContent h3 span{
+    color: #8c8e90;
+    font-size: 16px;
+}
+.yjContent .parkTour .parkTour_pic figure{
+    float: left;
+    overflow: hidden;
+}
+.yjContent .parkTour .parkTour_pic figure img{
+      transition:0.5s;
+}
+.yjContent .parkTour .parkTour_pic figure img:hover{
+
+    transform:scale(1.1);
+}
+.yjContent .parkTour .parkTour_pic .pic1{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.yjContent .parkTour .parkTour_pic .pic1 img{
+    width: 294px;
+    height: 230px;
+
+}
+.yjContent .parkTour .parkTour_pic .pic2{
+    margin-right: 15px;
+}
+.yjContent .parkTour .parkTour_pic .pic2 img{
+    width: 149px;
+    height: 108px;
+
+}
+.yjContent .parkTour .parkTour_pic .pic3 img{
+    width: 130px;
+    height: 108px;
+}
+.yjContent .parkTour .parkTour_pic .pic3{
+    margin-right: 15px;
+}
+.yjContent .parkTour .parkTour_pic .pic4 img{
+    width: 130px;
+    height: 108px;
+}
+.yjContent .parkTour .parkTour_pic .pic5 img{
+    width: 130px;
+    height: 108px;
+
+}
+.yjContent .parkTour .parkTour_pic .pic6{
+    margin-bottom: 11px;
+}
+.yjContent .parkTour .parkTour_pic .pic6 img{
+    width: 130px;
+    height: 108px;
+
+}
+.yjContent .parkTour .yjIntroduce{
+    width: 310px;
+    height: 100%;
+    float: left;
+}
+.yjContent .parkTour .yjIntroduce .the_Introduce{
+    width: 294px;
+    height: 390px;
+    background: #f3f3f3;
+    margin-top: 44px;
+    margin-left: 16px;
+}
+.yjContent .parkTour .yjIntroduce .the_Introduce a{
+    color: red;
+    float: right;
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.yjContent .parkTour .yjIntroduce .the_Introduce p{
+    /*font-size: 14px;*/
+    margin-left: 20px;
+    line-height: 28px;
+}
+.yjContent .parkTour .yjIntroduce .the_Introduce h3{
+    line-height: 48px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.yjContent .parkActivities{
+    width: 400px;
+    height: 417px;
+    float: right;
+    /*background-color: greenyellow;*/
+}
+
+.yjContent .parkActivities .activities>li{
+    width: 400px;
+    height: 90px;
+    margin-top: 30px;
+    /*font-size: 14px;*/
+}
+.yjContent .parkActivities .activities>li figure{
+    float: left;
+    margin-right: 16px;
+}
+.yjContent .parkActivities .activities>li p{
+    margin-top: 8px;
+    color: #b9b9b9;
+}
+
+/*.yjContent .parkActivities .activities>li h4{
+    float: left;
+}
+.yjContent .parkActivities .activities>li p{
+    float: left;
+}*/
+.yjContent .parkActivities .parkActivities_top{
+    height:60px;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+}
+
+.yjContent .yjNews .news_title ul{
+    height: 42px;
+    border-bottom: 1px solid #cbcbcb;
+    box-sizing: border-box;
+    margin-top: 18px;
+}
+.yjContent .yjNews .news_title ul>li{
+    float: left;
+    font-size: 18px;
+    line-height: 42px;
+    width: 87px;
+    height: 42px;
+    margin-right: 36px;
+    cursor: pointer;
+}
+.yjContent .yjNews .news_title ul>li.current{
+    border-bottom: 4px  solid #2f64bf;
+    box-sizing: border-box;
+}
+.yjContent .silver{
+    width: 400px;
+    height: 374px;
+    float: right;
+    /*background-color: yellow;*/
+}
+.yjContent .silver .silver_top{
+    height:60px;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+}
+.yjContent .silver .models>li{
+    float: left;
+    width: 86px;
+    height: 122px;
+    margin: 18px;
+}
+.yjContent .silver .models>li:last-child{
+    width: 99px;
+}
+.yjContent .silver .models>li img{
+    width: 86px;
+    height: 100px;
+    transition:0.5s;
+}
+.yjContent .silver .models>li img:hover{
+    transform: scale(1.1)
+}
+.yjContent .silver .models>li img.mars{
+    width: 99px;
+}
+.yjContent .silver .models>li a{
+    width: 86px;
+    height: 122px;
+    display: block;
+    color: #000;
+}
+
+.yjContent .silver .models>li span{
+    display: inline-block;
+    width: 86px;
+    text-align: center;
+}
+.yjContent  .corporateSer{
+    width: 100%;
+    height: 420px;
+    float: left;
+    /*background-color: red;;*/
+}
+.yjContent  .corporateSer .corporate_top{
+    height:60px;
+    border-bottom: 1px solid #cbcbcb;
+    width: 100%;
+
+}
+.yjContent  .corporateSer>ul>li{
+    float: left;
+    width: 200px;
+    height: 343px;
+    margin-left: 33px;
+    margin-top: 20px;
+}
+.yjContent  .corporateSer>ul>li figcaption{
+    padding-left: 10px;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px dotted #cbcbcb;
+}
+.yjContent  .corporateSer>ul>li p{
+    line-height: 30px;
+}
+.yjContent  .corporateSer>ul>li p.price{
+    font-size: 18px;
+}
+.yjContent  .corporateSer>ul>li .price>span{
+    color: red;
+}
+.yjContent  .corporateSer>ul>li .intro{
+    color: #b9b9b9;
+}
+.footer{
+    height: 165px;
+    width: 100%;
+    /*background-color: firebrick;*/
+}
+.footer .footer_guide{
+    width: 100%;
+    height: 41px;
+    /*margin: 0 auto;*/
+    background: #326cd0;
+}
+.footer .footer_guide .guides{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+.footer .footer_guide .guides>ul>li{
+    float: left;
+    margin-left: 19px;
+    line-height: 41px;
+    color: white;
+}
+.yjContent .corporateSer .img_box{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.yjContent .corporateSer .img_box img{
+    transition:1s;
+    width: 200px;
+    height: 200px;
+}
+.yjContent .corporateSer .img_box img:hover{
+    /*transform: scale(1.1);*/
+    transform:rotateY(360deg);
+}
+.footer .footer_guide .guides>ul>li a{
+    color: white;
+}
+.footer .footer_guide .guides>ul{
+    margin: 0 auto;
+    width: 820px;
+    height: 41px;
+}
+.footer  .footer_tips{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.footer  .footer_tips p{
+    line-height: 25px;
+}
+.footer  .footer_tips p .gap1{
+     width: 32px;
+     display: inline-block;
+ }
+.footer  .footer_tips p .gap2{
+    width: 15px;
+    display: inline-block;
+}
+.footer  .footer_tips .QR_codes{
+    width: 75px;
+    height: 87px;
+    float: right;
+    margin-top: 10px;
+    background: url("../imgs/erweima.png") no-repeat 0 0;
+}
