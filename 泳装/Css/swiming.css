@@ -1,0 +1,441 @@
+body, ul, button, p ,h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+    font-family: "宋体";
+    font-size: 14px;
+}
+body{
+    overflow-x: hidden;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+.top{
+    height: 36px;
+    width: 100%;
+    background: url("../images/top.png")repeat-x;
+     text-align: center;
+    /*background: red;*/
+}
+.top .topMiddle{
+    width: 1100px;
+    height: 36px;
+    margin: 0 auto;
+}
+.top .topMiddle .topLeft li{
+    float: left;
+    line-height: 36px;
+    margin: 0 5px;
+
+}
+
+.top .topMiddle .topRight li{
+    float: right;
+    line-height: 34px;
+    width: 93px;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    text-align: center;
+}
+.top .topMiddle .topRight li .arrow{
+    display: inline-block;
+    width: 14px;
+    height: 9px;
+    background: url("../images/xiaojiantou.png")no-repeat;
+    margin-left: -5px;
+}
+.logo{
+    position: relative;
+    width: 1100px;
+    height: 134px;
+    margin: 0 auto;
+    background: url("../images/Logo.png")no-repeat;
+}
+.logo .abs{
+    position:absolute;
+    right: 266px;
+    top:59px;
+    width: 167px;
+    height: 18px;
+
+}
+.logo ul .one{
+    float: left;
+    background: url("../images/QQ.png")no-repeat;
+    cursor: pointer;
+}
+.logo ul .qq .erWei .mainEw{
+    margin-left: 20px;
+    float: left;
+    width: 260px;
+}
+.logo ul .sail{
+    background-position: 0 0;
+    width: 67px;
+    height: 18px;
+}
+.logo ul .qq{
+    background-position: -70px 0;
+    width: 97px;
+    height: 18px;
+    margin-left: 3px;
+    position: relative;
+}
+
+.logo ul .qq .erWei{
+    width: 411px;
+    height: 250px;
+    position: absolute;
+    bottom: -260px;
+    right: 0;
+    background: url("../images/tanchuang.png")no-repeat;
+    cursor: default;
+    display: none;
+}
+.logo ul .qq .erWei ul li:first-child{
+    margin-top: 14px;
+}
+.logo ul .qq .erWei ul li{
+    width: 258px;
+    float: left;
+    /*background: red;*/
+    margin-top: 7px;
+}
+.logo ul .qq .erWei ul li.down{
+    margin-top: 30px;
+}
+.logo ul .qq .erWei ul li .qqTalk{
+    width: 92px;
+    height: 22px;
+    margin-left: 5px;
+}
+.logo ul .qq .erWei ul li .star{
+    width: 78px;
+    height: 13px;
+    background-position: 0 -39px;
+}
+.logo ul .qq .erWei ul li a{
+    width: 100px;
+    height: 30px;
+    float: left;background: url("../images/erweima.png")no-repeat;
+    background-position: 0 -53px;
+    margin-right:8px;
+}
+.erWeiMa{
+    width: 115px;
+    height: 115px;
+    float: right;
+    background: url("../images/erweima.png") no-repeat;
+    background-position: 0 -83px;
+    margin-top: 120px;
+    margin-right:10px ;
+}
+/*.shouCang{
+    line-height: 30px;
+}*/
+.logo ul .qq .erWei ul li p{
+    float: left;
+    line-height: 22px;
+}
+.logo ul .qq .erWei ul li em{
+    background: url("../images/erweima.png")no-repeat;
+    float: left;
+
+}
+.logo ul .qq .erWei ul li em.vip{
+     height: 17px;
+    width: 65px;
+    background-position: 0 -22px;
+    margin-left: 15px;
+}
+.guide{
+    color: white;
+    height: 35px;
+    width:100%;
+    background: black;
+    text-align: center;
+}
+.guide ul{
+    width: 1100px;
+    height: 35px;
+    margin: 0 auto;
+}
+.guide ul li{
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background: url("../images/guide1.png")no-repeat;
+    cursor: pointer;
+}
+.guide ul li:hover{
+    background: url("../images/guide0.png")no-repeat;
+}
+.mainPic{
+    width: 1900px;
+    height: 593px;
+    margin: 0 auto;
+    background: url("../images/mainPic.png")no-repeat;
+}
+.Middle{
+    width: 1100px;
+    height: 1928px;
+    margin: 0 auto;
+    /*background: green*/
+}
+.Middle .hotRecommend{
+    height: 77px;
+    width: 1100px;
+}
+.Middle .hotRecommend h3{
+    line-height: 77px;
+    text-align: center;
+    font-size: 30px;
+}
+.Middle .swimsuit{
+    width: 100%;
+    height: 256px;
+    /*background: red;*/
+}
+.Middle .swimsuit ul li{
+    width: 204px;
+    height: 256px;
+    float: left;
+    margin-left: 14px;
+}
+.Middle .swimsuit ul li p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #768e9a;
+}
+.Middle .swimsuit ul li .icon1{
+    display: block;
+    width: 70px;
+    height: 22px;
+    background: url("../images/buying.png") no-repeat;
+    margin: 0 auto;
+}
+.Middle .MiddleMiddle{
+    width: 100%;
+    height: 272px;
+    margin-top: 27px;
+}
+.Middle .MiddleMiddle div{
+     float: left;
+     height: 272px;
+
+ }
+.Middle .MiddleMiddle .corker{
+    width: 432px;
+    /*background: url("../images/bgs.png") no-repeat;*/
+    margin-left: 14px;
+    overflow: hidden;
+    position: relative;
+}
+.Middle .MiddleMiddle .corker .lunBo{
+    width: 2500px;
+    position: absolute;
+    left: 0;
+
+}
+.Middle .MiddleMiddle .corker ul li{
+    float: left;
+    width: 432px;
+    height: 272px;
+}
+.Middle .MiddleMiddle .corker .button{
+    position: absolute;
+    right: 45px;
+    bottom: 16px;
+}
+.Middle .MiddleMiddle .corker .button li {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 10px;
+    background: url("../images/button.png")no-repeat;
+
+}
+.Middle .MiddleMiddle .corker .button .noButtons{
+    background: red;
+}
+.Middle .MiddleMiddle .imaginary_line{
+    width: 44px;
+    background: url("../images/imaginary_line .png") no-repeat;
+    margin: 0 50px;
+}
+.Middle .MiddleMiddle .intro{
+    width: 508px;
+}
+.Middle .MiddleMiddle .intro ul li{
+    width: 498px;
+    margin-top: 17px;
+    padding-right: -10px;
+}
+.Middle .MiddleMiddle .intro ul li:first-child{
+    margin-top: 0;
+}
+.Middle .MiddleMiddle .intro ul li h4{
+    line-height: 34px;
+    display: inline-block;
+    float: left;
+}
+
+.Middle .MiddleMiddle .intro ul li p{
+    text-indent: 2em;
+}
+.Middle .MiddleMiddle .intro ul li p a{
+    color: #9d445a;
+}
+.Middle .MiddleMiddle .intro ul li input{
+    width: 182px;
+    height: 20px;
+    border: 2px solid #cbcbcb;
+    float: left;
+}
+.Middle .MiddleMiddle .intro ul li .Go{
+    width: 28px;
+    height: 26px;
+    float: left;
+    background: url("../images/go.png") no-repeat;
+    margin-left: -2px;
+}
+.Middle .MiddleMiddle .intro ul li .bathing{
+    height: 45px;
+    width: 100%;
+    margin-top: 8px;
+}
+.Middle .MiddleMiddle .intro ul li .bathing a{
+    margin-right: 15px;
+}
+.Middle .newProducts{
+    height: 822px;
+    width: 100%;
+    background: #e3e3e3;
+    margin-top: 31px;
+}
+.Middle .newProducts .newTitle{
+    height: 100px;
+    width: 100%;
+    /*background: rosybrown;*/
+}
+.Middle .newProducts .newTitle h2{
+    width: 220px;
+    margin: 0 auto;
+    font-size: 33px;
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 2px dotted black;
+}
+.Middle .newProducts .newPic{
+    height: 722px;
+    width: 100%;
+    /*background: fuchsia;*/
+}
+.Middle .newProducts .newPic ul .thePic{
+    width: 268px;
+    height: 349px;
+    float: left;
+    margin-left: 6px;
+    margin-top: 7px;
+    background: #E0EBF1;
+    /*background: green;*/
+}
+.Middle .butterfly{
+    height: 343px;
+    width: 100%;
+    margin-top: 33px;
+    background: url("../images/butterfly.png") no-repeat;
+}
+
+.Middle .newProducts .newPic ul .thePic .blueBg{
+    width:100%;
+    height: 61px;
+
+}
+.Middle .newProducts .newPic ul .thePic .blueBg p{
+    width:213px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #597F99;
+    display: inline-block;
+    margin-left: 5px;
+  
+}
+.Middle .newProducts .newPic ul .thePic .blueBg p span{
+    color: #9d445a;
+}
+.Middle .newProducts .newPic ul .thePic .blueBg a{
+    float: right;
+    width: 48px;
+    height: 48px;
+    background: url("../images/lijiqiangpi.png")no-repeat;
+    margin-right: 2px;
+}
+.footer{
+    width: 100%;
+    height: 224px;
+    background:url("../images/footBg.png")repeat-x;
+    margin: 0 auto;
+}
+.footer .footMiddle{
+    width:1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+.footer .footMiddle .middleTop{
+    height: 168px;
+}
+.footer .footMiddle .middleTop .jinBian{
+    width: 213px;
+    float: left;
+}
+/*.footer .footMiddle .middleTop .connect{
+    float: left;
+}*/
+.footer .footMiddle .middleTop .connect{
+    padding-top:25px;
+}
+.footer .footMiddle .middleTop .connect li{
+    width: 84px;
+    height: 118px;
+    float: left;
+    /*background: red;*/
+    margin-left:90px
+}
+.footer .footMiddle .middleTop .connect li p{
+    font-size: 16px;
+}
+.footer .footMiddle .middleTop .connect li a{
+    display: block;
+    margin-top: 9px;
+    color:#70706E;
+}
+.footer .footMiddle .middleBottom{
+    height: 56px;
+    width: 100%;
+}
+.footer .footMiddle .middleBottom p{
+    margin-left: 46px;
+}
+.footer .footMiddle .middleBottom ul{
+    width: 792px;
+    display: block;
+    margin: 0 auto;
+}
+.footer .footMiddle .middleBottom ul li{
+    float: left;
+}
+.footer .footMiddle .middleBottom ul li a{
+    margin: 0 2px;
+    color: black;
+}

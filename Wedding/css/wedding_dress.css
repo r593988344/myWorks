@@ -1,0 +1,1407 @@
+
+html {
+    color: #404040;
+    background: #FFF
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+
+    overflow-x: hidden;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before, q:after {
+    content: ''
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+em {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset {
+    display: none
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*页面样式初始化完成*/
+.board {
+    background: url("../imgs/xiaopaizi.png") no-repeat;
+    position: absolute;
+    right: -69px;
+    top: 8px;
+    width: 49px;
+    height: 116px;
+}
+
+.board .collection {
+    width: 50px;
+    height: 40px;
+    /*background-color: red;*/
+    display: block;
+    margin-top: 35px;
+}
+
+.board .response {
+    margin-top: 2px;
+    width: 50px;
+    height: 40px;
+    /*background-color: blue;*/
+    display: block;
+}
+
+.spirit {
+    background: url("../imgs/spirit.png") no-repeat;
+}
+
+.header {
+    width: 100%;
+    height: 26px;
+    background: url("../imgs/hunsha_title.png") repeat-x;
+}
+
+.header .top_nav {
+    width: 992px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header .top_nav .top_nav_right .toolGuide > li:hover > a {
+    color: #f40;
+}
+
+.header .top_nav .top_nav_left .signIn > li:hover > a {
+    color: #f40;
+}
+
+.header .top_nav .top_nav_left {
+    float: left;
+}
+
+.header .top_nav .top_nav_left > ul > li {
+    float: left;
+    margin-right: 9px;
+}
+
+.header .top_nav .top_nav_right > ul > li.shopping {
+    margin: 0 10px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown {
+    position: relative;
+    padding: 0 5px;
+    /*background-color: red;*/
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown > ul {
+    position: absolute;
+    left: 50%;
+    display: none;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown > ul > li {
+    line-height: 20px;
+    text-align: center;
+    /*    border:1px solid #666666;
+        box-sizing: border-box;*/
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown:hover {
+    background: white;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown ul {
+    width: 100%;
+    background: white;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown ul > li:hover {
+    background: #f4f4f4;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown .myTaoBao {
+    margin-left: -36px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown .shop_car {
+    margin-left: -55px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown .collect {
+    margin-left: -28px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown .webGuide {
+    margin-left: -36px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown .theSearch {
+    margin-left: -24px;
+}
+
+.header .top_nav .top_nav_right > ul > li.slideDown li {
+    height: 20px;
+    /*background-color: red;*/
+    width: 100%;
+}
+
+.header .top_nav .top_nav_right > ul > li.shopping > div {
+    width: 108px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #d7d7d7;
+    margin: 2px 0 2px 0;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header .top_nav .top_nav_right {
+    float: right;
+}
+
+.header .top_nav .signIn > li {
+    height: 26px;
+    float: left;
+    line-height: 26px;
+}
+
+.header .top_nav .toolGuide > li {
+    height: 26px;
+    float: left;
+    line-height: 26px;
+}
+
+.header .top_nav ul li span {
+    color: #bebebe;
+    margin: 0 5px;
+}
+
+.header .top_nav ul li span.redNum {
+    color: red;
+    margin: 0;
+}
+
+.header .top_nav ul li a {
+    color: #666666;
+}
+
+.header .top_nav ul li .arrow {
+    width: 8px;
+    height: 4px;
+    display: inline-block;
+    background-position: 0 -65px;
+    margin-left: 7px;
+}
+
+.header .top_nav ul li .car {
+    width: 14px;
+    height: 12px;
+    background-position: 0 -47px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 4px;
+    /*vertical-align: text-bottom;*/
+}
+
+.LoGo {
+    width: 992px;
+    height: 76px;
+    margin: 0 auto;
+}
+
+.LoGo > div {
+    float: left;
+}
+
+.LoGo .taoBao {
+    width: 215px;
+    height: 76px;
+}
+
+.LoGo .taoBao h1 > img {
+    width: 215px;
+    height: 76px;
+}
+
+.LoGo .moreMarket {
+    width: 187px;
+    height: 76px;
+    /*position: relative;*/
+}
+
+.LoGo .moreMarket .more {
+    position: relative;
+    width: 95px;
+}
+
+.LoGo .moreMarket .more .pullDown {
+    position: absolute;
+    background: skyblue;
+    z-index: 3;
+    display: none;
+}
+
+.LoGo .moreMarket .more .pullDown > li {
+    width: 95px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.LoGo .moreMarket .more .pullDown > li:hover {
+    background-color: #f4f4f4;
+}
+
+.LoGo .moreMarket p {
+    margin-top: 41px;
+    width: 95px;
+    cursor: pointer;
+}
+
+.LoGo .moreMarket p .arrow2 {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-position: 0 -86px;
+}
+
+.LoGo .top_search {
+    width: 589px;
+    height: 76px;
+}
+
+.LoGo .top_search > ul > li {
+    float: left;
+    width: 55px;
+    margin-top: 11px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+}
+
+.LoGo .top_search > ul > li.choose {
+    background: url("../imgs/orange_color.png") no-repeat;
+    color: white;
+    font-weight: bolder;
+}
+
+.LoGo .top_search > form > input {
+    float: left;
+    border: none;
+}
+
+.LoGo .top_search > form > input.search {
+    width: 450px;
+    height: 28px;
+    background: url("../imgs/search.png") no-repeat;
+    padding-left: 31px;
+    color: #666666;
+}
+
+.LoGo .top_search > form > input.searchBtn {
+    width: 103px;
+    height: 28px;
+    background: url("../imgs/searchBtn.png") no-repeat;
+    cursor: pointer;
+}
+
+.nav {
+    width: 100%;
+    height: 97px;
+}
+
+.nav .nav_top {
+    width: 992px;
+    height: 28px;
+    margin: 0 auto;
+    /*background-color: red;*/
+}
+
+.nav .nav_top > ul > li {
+    width: 70px;
+    height: 29px;
+    text-align: center;
+    line-height: 28px;
+    padding-top: 1px;
+
+    float: left;
+    cursor: pointer;
+    /*margin-top: 1px;*/
+}
+
+.nav .nav_top > ul > li.choose {
+    background: url("../imgs/btn1.png") no-repeat;
+    /*z-index: 2;*/
+}
+
+.nav .nav_top > ul > li.man {
+    position: relative;
+}
+
+.nav .nav_top > ul > li .new {
+    background-position: 0 -103px;
+    width: 21px;
+    height: 12px;
+    position: absolute;
+    top: -4px;
+    left: 42px;
+}
+
+.nav .nav_guide {
+    height: 69px;
+    width: 100%;
+    background: url("../imgs/search_bg.png") repeat-x;
+}
+
+.nav .nav_guide .nav_middle {
+    width: 992px;
+    height: 34px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    padding-top: 2px;
+    border-bottom: 1px dotted #aeaeae;
+}
+
+.nav .nav_guide .nav_middle > ul.left_guide {
+    display: none;
+}
+
+.nav .nav_guide .nav_middle > ul.outChoose {
+    display: block;
+}
+
+/*.nav .nav_guide .nav_middle>ul.left_guide{
+    float: left;
+
+}*/
+.nav .nav_guide .nav_middle .right_guide {
+    float: right;
+}
+
+.nav .nav_guide .nav_middle .right_guide > li {
+    float: left;
+    border: none;
+    font-weight: normal;
+
+}
+
+.nav .nav_guide .nav_middle .right_guide > li a {
+    color: #808080;
+}
+
+.nav .nav_guide .nav_middle .right_guide > li em {
+    width: 14px;
+    height: 16px;
+    background-position: 0 -118px;
+    margin-right: 4px;
+}
+
+.nav .nav_guide .nav_middle > ul {
+    margin-left: 8px;
+
+}
+
+.nav .nav_guide .nav_middle > ul > li {
+    float: left;
+    line-height: 17px;
+    border-right: 1px dotted #aeaeae;
+    margin-top: 8px;
+    padding: 0 14px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.nav .nav_guide .nav_middle .left_guide > li.choose {
+    background-color: #ea4a69;
+    color: white;
+}
+
+.nav .nav_guide .nav_bottom {
+    height: 32px;
+    width: 992px;
+    margin: 0 auto;
+    /*line-height: 32px;*/
+}
+
+.nav .nav_guide .nav_bottom > ul > li {
+    float: left;
+    line-height: 32px;
+    margin-left: 10px;
+    color: #808080;
+}
+
+.nav .nav_guide .nav_bottom > ul > li a {
+    color: #808080;
+}
+
+.nav .nav_guide .nav_bottom .cloth_type {
+    float: left;
+    width: 82px;
+    height: 24px;
+    background: url("../imgs/btn3.png") no-repeat;
+    margin-top: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 9px;
+
+}
+.nav .nav_guide .nav_bottom .cloth_type>span{
+    width: 82px;
+    line-height: 24px;
+    text-align: center;
+    display: block;
+}
+.moreMarket .more:hover > p {
+    color: #f40;
+}
+
+.moreMarket > p .pullDown {
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    background-color: white;
+}
+
+.nav .nav_guide .nav_bottom .cloth_type > ul {
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background: white;
+    display: none;
+    z-index: 2;
+}
+
+.nav .nav_guide .nav_bottom .cloth_type > ul > li {
+    width: 100%;
+    height: 20px;
+    /*    border:1px solid #666666;
+        box-sizing: border-box;*/
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.nav .nav_guide .nav_bottom .cloth_type > ul > li:hover {
+    background-color: #C9C9C9;
+}
+
+/*.nav .nav_guide .nav_bottom button{
+    float: left;
+}*/
+.nav .nav_guide .nav_bottom input {
+    float: left;
+    border: none;
+    margin-top: 4px;
+}
+
+.nav .nav_guide .nav_bottom input.input {
+    width: 174px;
+    height: 24px;
+    background: url("../imgs/search_bg2.png") no-repeat;
+    padding-left: 5px;
+}
+
+.nav .nav_guide .nav_bottom input.submit {
+    width: 57px;
+    height: 24px;
+    /*margin-left: 5px;*/
+    cursor: pointer;
+    background: url("../imgs/btn2.png") no-repeat;
+    font-weight: bolder;
+    color: #dd4a66;
+}
+
+.main {
+    width: 992px;
+    height: 3294px;
+    margin: 8px auto 16px auto;
+    position: relative;
+    /*background-color: #87ceeb;*/
+    /*margin-top: 8px;*/
+}
+
+.main .main_top {
+    height: 750px;
+    width: 992px;
+
+}
+
+.main .main_top .side_bar {
+    background: url("../imgs/side_bar_bg.png") no-repeat;
+    width: 190px;
+    height: 750px;
+    float: left;
+    margin-right: 9px;
+}
+
+.main .main_top .side_bar .nvZhuang_chanel {
+    width: 190px;
+    height: 65px;
+}
+
+.main .main_top .side_bar .wedding {
+    width: 190px;
+    height: 72px
+}
+
+.main .main_top .side_bar .introduce {
+    width: 168px;
+    height: 78px;
+    margin: 10px auto 0 auto;
+    /*background-color: red;*/
+    /*margin-top: 16px;*/
+}
+
+.main .main_top .side_bar .introduce > ul > li {
+    width: 84px;
+    height: 23px;
+    border-bottom: 1px solid #F1F1F1;
+    float: left;
+    line-height: 23px;
+    text-align: right;
+    margin-top: 6px;
+}
+
+.main .main_top .side_bar .introduce > ul > li a {
+    margin-right: 11px;
+    color: #404040;
+}
+
+.main .main_top .side_bar .introduce > ul > li .dot {
+    background-position: 0 -137px;
+    width: 3px;
+    height: 3px;
+    margin-right: 8px;
+}
+
+.main .main_top .side_bar .full_dress {
+    width: 186px;
+    height: 105px;
+    margin-left: 2px;
+}
+
+.main .main_top .side_bar .cheongsam {
+    width: 186px;
+    height: 114px;
+    margin-left: 2px;
+}
+
+.main .main_top .broadcast {
+    width: 540px;
+    height: 291px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .main_top .main_top_show {
+    width: 793px;
+    height: 730px;
+    margin-top: 12px;
+    float: left;
+}
+
+.main .main_top .broadcast .changePic {
+    width: 2700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main .main_top .broadcast .changePic > li {
+    width: 540px;
+    height: 291px;
+    float: left;
+    cursor: pointer;
+
+}
+
+.main .main_top .broadcast .changBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.main .main_top .broadcast .changBtn > li {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #989898;
+    background: white;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main .main_top .broadcast .changBtn > li.choose {
+    color: white;
+    background: #1c1c1c;
+}
+
+.main .main_top .main_top_show .hotCake {
+    width: 239px;
+    height: 291px;
+    margin-left: 14px;
+    float: left;
+}
+
+.main .main_top .main_top_show .hotCake .hotCake_top {
+    width: 239px;
+    height: 44px;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice {
+    height: 247px;
+    width: 239px;
+    background: url("../imgs/zhengdian.png") no-repeat;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice img {
+    margin-left: 10px;
+    float: left;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice p {
+    padding-left: 140px;
+    margin-right: 14px;
+    line-height: 18px;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice p.originalPrice {
+    text-decoration: line-through;
+    color: #7f7f80;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice p.currentPrice {
+    font-size: 18px;
+    color: #dd4a66;
+    margin-top: 18px;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice p.currentPrice span {
+    font-size: 12px;
+    color: #404040;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice > h3 {
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice > h3 .time {
+    font-size: 14px;
+    background: black;
+    color: white;
+}
+
+.main .main_top .main_top_show .hotCake .halfPrice > h3 .remain {
+    font-size: 11.5px;
+}
+
+.main .main_top .main_top_show .toDayNew {
+    width: 793px;
+    height: 38px;
+    margin-top: 10px;
+    /*background-color: red;*/
+    background: url("../imgs/topBg1.png") no-repeat;
+    float: left;
+}
+
+.main .main_top .main_top_show .toDayNew p.theNew {
+    line-height: 38px;
+    font-size: 18px;
+    float: left;
+}
+
+.main .main_top .main_top_show .toDayNew p.theNew span {
+    font-size: 16px;
+    color: #dd4a66;
+}
+
+.main .main_top .main_top_show .toDayNew p.newNum {
+    color: #7a7a7a;
+    float: right;
+    margin-top: 20px;
+}
+
+.main .main_top .main_top_show .toDayNew p.newNum span {
+    color: #dd4a66;
+}
+
+.main .main_top .main_top_show .chifforobe {
+    width: 793px;
+    height: 386px;
+    float: left;
+    margin-top: 13px;
+}
+/*
+
+.main .main_top .main_top_show .chifforobe img{
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+.main .main_top .main_top_show .chifforobe img:hover{
+    box-shadow:0px 0px 30px #ccc;
+    transform:scale(1.1);
+}
+*/
+
+.main .main_top .main_top_show .chifforobe .store {
+    height: 48px;
+    width: 100%;
+    /*background-color: red;*/
+    float: left;
+}
+
+.main .main_top .main_top_show .chifforobe .store p {
+    line-height: 33px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.main .main_top .main_top_show .chifforobe .store p > span {
+    color: #7f7f80;
+}
+
+.main .main_top .main_top_show .chifforobe .store a {
+    width: 31px;
+    height: 33px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.main .main_top .main_top_show .chifforobe p.candy {
+    width: 186px;
+    margin-left: 3px;
+    line-height: 25px;
+    margin-top: 6px;
+    border-bottom: 1px solid #f0f0f0;
+    float: left;
+}
+
+.main .main_top .main_top_show .chifforobe > ul > li {
+    width: 194px;
+    height: 386px;
+    float: left;
+    margin-left: 2px;
+    /*background-color: red;*/
+}
+
+.main .main_top .main_top_show .chifforobe > ul > li img {
+    width: 194px;
+    height: 306px;
+    float: left;
+}
+
+.main .weddingDress {
+    width: 992px;
+    height: 647px;
+}
+
+.main .weddingSail .weddingSail_title {
+    height: 35px;
+    width: 992px;
+    border-bottom: 2px solid #d0ccd7;
+}
+
+.main .weddingSail .weddingSail_title .weddingLogo {
+    height: 35px;
+    width: 190px;
+    border-bottom: 2px solid #dd4a66;
+    float: left;
+}
+
+.main .weddingSail .weddingSail_title .weddingLogo img {
+    width: 190px;
+    height: 35px;
+}
+
+.main .weddingSail .weddingSail_title > ul {
+    float: right;
+    margin-top: 17px;
+}
+
+.main .weddingSail .weddingSail_title > ul > li {
+    float: left;
+    line-height: 12px;
+    color: #7f7f80;
+}
+
+.main .weddingSail .weddingSail_title > ul > li a {
+    margin: 0 8px;
+    color: #7f7f80;
+}
+
+.main .weddingSail .weddingSail_title > ul > li a.moreBtn {
+    width: 45px;
+    height: 19px;
+    display: block;
+    margin-left: 27px;
+    background: url("../imgs/moreBtn.png") no-repeat;
+}
+
+.main .weddingDress .wedding {
+    width: 992px;
+    height: 474px;
+    /*background-color: red;*/
+    margin-top: 8px;
+}
+
+.main .weddingSail .wedding .theWedding > li {
+    float: left;
+    margin: 2px 2px 0 0;
+    cursor: pointer;
+    /*background-color: red;*/
+}
+
+.main .weddingDress .wedding .theWedding .wedding_one {
+    width: 194px;
+    height: 340px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_two {
+    width: 190px;
+    height: 340px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_three {
+    width: 398px;
+    height: 340px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_four {
+    width: 202px;
+    height: 340px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_five {
+    width: 332px;
+    height: 130px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_six {
+    width: 327px;
+    height: 130px;
+}
+
+.main .weddingDress .wedding .theWedding .wedding_seven {
+    width: 327px;
+    height: 130px;
+}
+
+.main .weddingSail .brandLibrary {
+    width: 992px;
+    height: 113px;
+    margin-top: 15px;
+    background: url("../imgs/pingpaiku_bg.png") no-repeat;
+}
+
+.main .weddingSail .brandLibrary .brand > li {
+    width: 71px;
+    height: 113px;
+    margin-left: 25px;
+    /*background-color: red;*/
+    float: left;
+}
+
+.main .weddingSail .brandLibrary .brand > li img {
+
+    width: 71px;
+    height: 71px;
+}
+
+.main .weddingSail .brandLibrary .brand > li a {
+    display: inline-block;
+    margin-top: 11px;
+    width: 100%;
+    height: 100px;
+    margin-top: 11px;
+    color: #7f7f80;
+}
+
+.main .weddingSail .brandLibrary .brand > li a > span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 26px;
+}
+
+.main .weddingSail .brandLibrary .brand > li.bigger {
+    width: 73px;
+}
+
+.main .weddingSail .brandLibrary .brand > li.big {
+    width: 72px;
+}
+
+.main .weddingSail .brandLibrary .brand > li.bigger img {
+    width: 73px;
+}
+
+.main .weddingSail .brandLibrary .brand > li.big img {
+    width: 72px;
+}
+
+.main .weddingSail .brandLibrary .brand > li.first_brand {
+    margin-left: 41px;
+}
+
+/*第二部分图片*/
+.main .fullDress .weddingSail_title {
+
+    padding-top: 9px;
+
+}
+
+.main .fullDress {
+    width: 992px;
+    height: 706px;
+}
+
+.main .fullDress .wedding {
+    width: 994px;
+    height: 525px;
+    /*background-color: red;*/
+    margin-top: 10px;
+}
+
+.main .fullDress .wedding .leftPic {
+    width: 401px;
+    height: 525px;
+    float: left;
+    /*background-color: green;*/
+
+}
+
+.main .fullDress .wedding .rightPic {
+    width: 593px;
+    height: 525px;
+    float: left;
+    /*background-color: red   */
+
+}
+
+.main .fullDress .wedding .leftPic > ul .wedding_one {
+    width: 399px;
+    height: 323px;
+
+}
+
+.main .fullDress .wedding .leftPic > ul .wedding_two {
+    width: 399px;
+    height: 198px;;
+}
+
+.main .fullDress .wedding .theWedding .wedding_three {
+    width: 188px;
+    height: 523px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_four {
+    width: 400px;
+    height: 198px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_five {
+    width: 207px;
+    height: 323px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_six {
+    width: 191px;
+    height: 323px;
+}
+
+.main .fullDress .wedding .leftPic > ul .wedding_one img {
+    width: 399px;
+    height: 323px;
+
+}
+
+.main .fullDress .wedding .leftPic > ul .wedding_two img {
+    width: 399px;
+    height: 198px;;
+}
+
+.main .fullDress .wedding .theWedding .wedding_three img {
+    width: 188px;
+    height: 523px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_four img {
+    width: 400px;
+    height: 198px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_five img {
+    width: 207px;
+    height: 323px;
+}
+
+.main .fullDress .wedding .theWedding .wedding_six img {
+    width: 191px;
+    height: 323px;
+}
+
+/*第三部分图片*/
+
+.main .chi_pao .weddingSail_title {
+
+    padding-top: 9px;
+
+}
+
+.main .chi_pao {
+    width: 992px;
+    height: 706px;
+}
+
+.main .chi_pao .wedding {
+    width: 994px;
+    height: 525px;
+    /*background-color: red;*/
+    margin-top: 10px;
+}
+
+.main .chi_pao .wedding .leftPic {
+    width: 192px;
+    height: 525px;
+    float: left;
+
+}
+
+.main .chi_pao .wedding .middlePic {
+    width: 410px;
+    height: 525px;
+    float: left;
+
+}
+
+.main .chi_pao .wedding .rightPic {
+    width: 392px;
+    height: 525px;
+    float: left;
+
+}
+
+.main .chi_pao .wedding .leftPic > ul .wedding_one {
+    width: 190px;
+    height: 323px;
+
+}
+
+.main .chi_pao .wedding .leftPic > ul .wedding_two {
+    width: 190px;
+    height: 198px;;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_three {
+    width: 408px;
+    height: 266px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_four {
+    width: 408px;
+    height: 255px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_five {
+    width: 194px;
+    height: 523px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_six {
+    width: 194px;
+    height: 523px;
+}
+
+.main .chi_pao .wedding .leftPic > ul .wedding_one img {
+    width: 190px;
+    height: 323px;
+
+}
+
+.main .chi_pao .wedding .leftPic > ul .wedding_two img {
+    width: 190px;
+    height: 198px;;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_three img {
+    width: 408px;
+    height: 266px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_four img {
+    width: 408px;
+    height: 255px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_five img {
+    width: 194px;
+    height: 523px;
+}
+
+.main .chi_pao .wedding .theWedding .wedding_six img {
+    width: 194px;
+    height: 523px;
+}
+
+.main .displayColumn {
+    width: 994px;
+    height: 132px;
+    margin: 15px auto;
+
+}
+
+.main .displayColumn > ul > li {
+    width: 247px;
+    height: 132px;
+    float: left;
+}
+
+.main .displayColumn > ul > li.loversCloth {
+    width: 249px;
+}
+
+.main .displayColumn > ul > li a {
+    width: 249px;
+    height: 130px;
+    display: block;
+}
+
+.main .displayColumn > ul > li img {
+    width: 249px;
+    height: 130px;
+}
+
+.main .clothNews {
+    width: 990px;
+    height: 295px;
+    margin: 0 1px;
+    background: #E5E5E5;
+    padding-top: 29px;
+}
+
+.main .clothNews .clothNews_top {
+    width: 990px;
+    height: 98px;
+
+}
+
+.main .clothNews .clothNews_top > ul > li {
+    width: 290px;
+    height: 98px;
+    float: left;
+    margin-left: 28px;
+
+}
+
+.main .clothNews .clothNews_top > ul > li > img {
+    float: left;
+}
+
+.main .clothNews .clothNews_top > ul > li > a {
+    display: block;
+    width: 290px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 14px;
+    color: white;
+    background: #989898;
+    float: left;
+}
+
+.main .clothNews .clothNews_middle {
+    width: 990px;
+    height: 160px;
+    /*background-color: #00008b;*/
+    margin-top: 24px;
+}
+
+/*.main .clothNews .clothNews_middle .toRed:hover{
+    color: #ff4400;
+}*/
+.main .clothNews .clothNews_middle > ul > li {
+    width: 190px;
+    height: 160px;
+    float: left;
+    margin-left: 56px;
+    /*background-color: red   */
+}
+
+.main .clothNews .clothNews_middle > ul > li.notice {
+    margin-left: 22px;
+}
+
+.main .clothNews .clothNews_middle > ul > li > h3 {
+    font-size: 14px;
+    line-height: 25px;
+    border-bottom: 1px solid #C9C9C9;
+    margin-bottom: 13px;
+    font-weight: bolder;
+}
+
+.main .clothNews .clothNews_middle > ul > li > a {
+    line-height: 25px;
+    color: #404040;
+    /*margin-top: 13px;*/
+    display: block;
+}
+
+.footer {
+    width: 992px;
+    height: 273px;
+    border-top: 1px solid #D1D7DC;
+    margin: 0 auto;
+}
+
+.footer .friendLink {
+    width: 100%;
+    height: 84px;
+    /*background-color: red*/
+}
+
+.footer .friendLink .link1 {
+    width: 970px;
+    height: 20px;
+    margin: 13px auto 0 auto;
+    /*margin-top: 13px;*/
+}
+
+.footer .friendLink .link1 > li {
+    margin: 0 10px;
+    float: left;
+    line-height: 20px;
+}
+
+.footer .friendLink .link2 {
+    height: 20px;
+    width: 900px;
+    margin: 4px auto 0 auto;
+}
+
+.footer .friendLink .link2 > li {
+    margin: 0 4px;
+    float: left;
+    line-height: 20px;
+}
+
+.footer .friendLink p {
+    text-align: center;
+    line-height: 20px;
+}
+
+/*//蒙板*/
+.theWedding li {
+    position: relative;
+}
+
+.theWedding li .mask {
+    background: #000000;
+    opacity: 0.9;
+
+}
+
+.theWedding li .mask img {
+    /*opacity: 0.5;*/
+}
+
+.theWedding li .mask .price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.theWedding li .mask .price > li {
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.theWedding li .mask .price li.name {
+    background: white;
+    color: #000000;
+}
+
+.theWedding li .mask .price li.thePrice {
+    background: #DA546D;
+    color: white;
+    font-size: 16px;
+}
+
+.theWedding li .mask .price li.thePrice span {
+    font-size: 12px;
+}
+
+
+
+
+
+
